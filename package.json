@@ -89,7 +89,10 @@
     "control-plane:types": "pnpm --filter @openmausbot/control-plane types",
     "control-plane:check": "pnpm --filter @openmausbot/control-plane check",
     "control-plane:test": "pnpm --filter @openmausbot/control-plane test",
-    "control-plane:dry-run": "pnpm --filter @openmausbot/control-plane dry-run"
+    "control-plane:dry-run": "pnpm --filter @openmausbot/control-plane dry-run",
+    "dev:media": "vite --open /media.html",
+    "start:media": "node scripts/start-media-studio.mjs",
+    "test:media": "node --experimental-strip-types --test server/media-studio/store.node-test.ts"
   },
   "dependencies": {
     "@1password/sdk": "0.5.0",
@@ -107,7 +110,7 @@
     "@novnc/novnc": "1.7.0",
     "@resvg/resvg-js": "2.6.2",
     "@tanstack/react-virtual": "^3.14.13",
-    "@trycua/cua-driver": "0.45.4",
+    "@trycua/cua-driver": "0.44.0",
     "ag-grid-community": "36.2.0",
     "ag-grid-react": "36.2.0",
     "ajv": "8.20.0",
